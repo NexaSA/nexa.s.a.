@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA S.A</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="font-sans bg-gradient-to-b from-yellow-50 to-orange-100 text-gray-800" id="inicio">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-60 text-white flex justify-between items-center px-6 md:px-12 py-4 backdrop-blur-sm z-50">
+    <div class="text-2xl font-bold tracking-wide">NEXA S.A</div>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button class="md:hidden text-3xl focus:outline-none" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú Desktop -->
+    <ul class="hidden md:flex space-x-8 text-lg">
+      <li><a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a></li>
+      <li><a href="#producto" class="hover:text-yellow-400 transition">Producto</a></li>
+      <li><a href="#compra" class="hover:text-yellow-400 transition">Cómo Comprar</a></li>
+      <li><a href="#proceso" class="hover:text-yellow-400 transition">Proceso</a></li>
+      <li><a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menú móvil -->
+  <div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-black bg-opacity-80 text-white text-center py-4 space-y-4 md:hidden z-40">
+    <a href="#inicio" class="block hover:text-yellow-400" onclick="toggleMenu()">Inicio</a>
+    <a href="#producto" class="block hover:text-yellow-400" onclick="toggleMenu()">Producto</a>
+    <a href="#compra" class="block hover:text-yellow-400" onclick="toggleMenu()">Cómo Comprar</a>
+    <a href="#proceso" class="block hover:text-yellow-400" onclick="toggleMenu()">Proceso</a>
+    <a href="#contacto" class="block hover:text-yellow-400" onclick="toggleMenu()">Contacto</a>
+  </div>
+
+  <!-- Hero -->
+  <header class="relative bg-cover bg-center h-screen flex flex-col justify-center items-center text-white text-center"
+    style="background-image: url('https://notiruya.com/wp-content/uploads/2022/08/5252b-mateo-candia.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 px-4 md:px-0">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">NEXA S.A</h1>
+      <p class="text-lg md:text-2xl mb-6">Raíces que nutren el futuro</p>
+      <a href="#producto" class="bg-yellow-500 text-black px-6 py-3 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold hover:scale-110 hover:bg-yellow-400 transition-all shadow-lg">Descubre más</a>
+    </div>
+  </header>
+
+  <!-- Sobre Nosotros -->
+  <section class="max-w-5xl mx-auto py-16 md:py-20 px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-yellow-700">Sobre Nosotros</h2>
+    <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+      Somos una empresa que rescata los saberes ancestrales de los Andes.  
+      Elaboramos <strong>papa deshidratada 100% natural</strong>, garantizando calidad, sabor y durabilidad, con un compromiso de sostenibilidad y comercio justo.
+    </p>
+  </section>
+
+  <!-- Producto -->
+  <section class="bg-white py-16 md:py-20 px-6" id="producto">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1604909053311-9a94a42f3e20" alt="Papa deshidratada andina" class="w-full h-auto rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-orange-700">Nuestro Producto</h2>
+        <p class="text-base md:text-lg text-gray-700 mb-6">
+          La <strong>papa deshidratada andina</strong> conserva el sabor original de la papa 
+          por más tiempo, manteniendo sus nutrientes esenciales. Perfecta para exportación, gastronomía y consumo diario.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2 md:space-y-3">
+          <li>⏳ Mayor tiempo de conservación</li>
+          <li>🥔 Sabor auténtico andino</li>
+          <li>💪 Rica en nutrientes y energía</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="bg-gradient-to-r from-yellow-100 to-orange-200 py-16 md:py-20 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 md:mb-12 text-yellow-800">Beneficios</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all">
+          <h3 class="text-lg md:text-xl font-bold mb-3">Durabilidad</h3>
+          <p>Se conserva por meses sin perder su valor nutricional.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all">
+          <h3 class="text-lg md:text-xl font-bold mb-3">Versatilidad</h3>
+          <p>Usos en sopas, guisos, harinas, snacks y gastronomía gourmet.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all">
+          <h3 class="text-lg md:text-xl font-bold mb-3">Nutrición</h3>
+          <p>Fuente de carbohidratos complejos, fibra y minerales andinos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo comprar -->
+  <section class="bg-orange-50 py-16 md:py-20 px-6" id="compra">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-orange-700">Cómo Comprar</h2>
+      <p class="mb-8 md:mb-10 text-base md:text-lg">Sigue estos simples pasos para recibir tu papa deshidratada:</p>
+      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-all">
+          <span class="text-3xl md:text-4xl font-bold text-yellow-600">1</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Elige tu producto</h3>
+          <p>Selecciona la cantidad y presentación que más te guste.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-all">
+          <span class="text-3xl md:text-4xl font-bold text-yellow-600">2</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Haz tu pedido</h3>
+          <p>Envíanos un mensaje por WhatsApp o correo electrónico.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition-all">
+          <span class="text-3xl md:text-4xl font-bold text-yellow-600">3</span>
+          <h3 class="text-lg md:text-xl font-semibold mb-2">Recíbelo en tu casa</h3>
+          <p>Coordinamos la entrega y lo recibes donde estés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso de Producción -->
+  <section id="proceso" class="py-16 bg-gradient-to-b from-amber-50 to-amber-100">
+    <h2 class="text-4xl font-bold mb-8 text-orange-700">Proceso de produccion</h2>
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-amber-900 mb-12 animate-fadeInUp">
+      
+    </h2>
+
+    <div class="space-y-10">
+      <!-- Paso 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 1: Selección y limpieza</h3>
+          <p class="text-gray-700">
+            Se eligen papas en buen estado, sin daños, y se lavan muy bien para quitar tierra e impurezas.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+           <img src="1.png" width="550" >
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 2: Pelado</h3>
+          <p class="text-gray-700">
+            Se puede pelar las papas si se desea, aunque no siempre es necesario.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          <img src="2.png" width="300" height="300">
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 3: Corte</h3>
+          <p class="text-gray-700">
+            Las papas se cortan en rodajas, láminas o tiras de grosor uniforme. Es importante para que el secado sea parejo.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          <img src="4.png" width="340" height="340">
+        </div>
+      </div>
+
+      <!-- Paso 4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 4: Enjuague en agua fría</h3>
+          <p class="text-gray-700">
+            Se sumerge en agua fría para eliminar el exceso de almidón.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          <img src="3.png" width="220" height="220">
+        </div>
+      </div>
+
+      <!-- Paso 5 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 5: Blanqueado</h3>
+          <p class="text-gray-700">
+            Luego se sumergen brevemente en agua caliente para inactivar enzimas, evitar que se pongan grises y facilitar el secado interior.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          <img src="5.png" width="140" height="140">
+        </div>
+      </div>
+
+      <!-- Paso 6 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 6: Colocación en bandejas</h3>
+          <p class="text-gray-700">
+            Las piezas se ubican sobre rejillas o bandejas, sin que se toquen entre sí, para que el aire circule bien.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          📷 <em>Espacio para imagen del paso 6</em>
+        </div>
+      </div>
+
+      <!-- Paso 7 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 7: Secado / deshidratación</h3>
+          <p class="text-gray-700">
+            Se dejan secar las papas y se comprueba al día siguiente que estén completamente deshidratadas.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          📷 <em>Espacio para imagen del paso 7</em>
+        </div>
+      </div>
+
+      <!-- Paso 8 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 8: Comprobación del secado</h3>
+          <p class="text-gray-700">
+            Se verifica que las papas ya estén secas: deben ser rígidas, crujientes y sin humedad.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          📷 <em>Espacio para imagen del paso 8</em>
+        </div>
+      </div>
+
+      <!-- Paso 9 -->
+      <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300 animate-fadeInUp">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-amber-800 mb-2">Paso 9: Acondicionamiento</h3>
+          <p class="text-gray-700">
+            Luego de deshidratadas, las piezas se guardan sueltas en recipientes por unos días para distribuir la humedad uniformemente.
+          </p>
+        </div>
+        <div class="md:w-1/2 bg-amber-200 h-64 flex items-center justify-center rounded-xl text-gray-500">
+          <img src="7.png" width="300" height="300">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+  <!-- Contacto -->
+  <section class="bg-yellow-100 py-16 md:py-20 px-6" id="contacto">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-orange-700">Contáctanos</h2>
+      <p class="mb-6 text-base md:text-lg">Haz tu pedido o solicita más información</p>
+      <a href="https://wa.me/XXXXXXXXXXX" target="_blank" class="bg-green-600 text-white px-6 md:px-8 py-3 rounded-full text-lg font-semibold hover:scale-110 hover:bg-green-700 transition-all shadow-lg">
+        Escríbenos por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 text-center">
+    <p>&copy; 2025 NEXA S.A | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
